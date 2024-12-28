@@ -1,6 +1,7 @@
 import LullabyCard from '@/components/LullabyCard';
+import { Link } from 'expo-router';
 import React from 'react';
-import { View, FlatList, StyleSheet } from 'react-native';
+import { View, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 
 const colicSounds = [
   { id: '1', name: 'Kolik Ses 1', image: require('../../assets/images/lullaby1.jpg') },
@@ -16,7 +17,11 @@ export default function ColicSoundsScreen() {
     <View style={styles.container}>
       <FlatList
         data={colicSounds} style={{marginTop: 50}}
-        renderItem={({ item }) => <LullabyCard lullaby={item} />}
+        renderItem={({ item }) => (
+          <Link href="/detail">
+            <LullabyCard lullaby={item} />
+          </Link>
+        )}
         keyExtractor={(item) => item.id}
         numColumns={2}
       />
