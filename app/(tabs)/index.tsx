@@ -3,12 +3,12 @@ import * as React from "react";
 import { View, StyleSheet, Image, Text, ImageBackground, ScrollView, TouchableOpacity } from "react-native";
 
 const lullabies = [
-  { id: '1', name: 'Ninni 1', image: require('../../assets/images/lullaby1.jpg'),imagepath:'lullaby1.jpg', path: require('../../assets/sounds/lullaby.mp3') },
-  { id: '2', name: 'Ninni 2', image: require('../../assets/images/lullaby2.jpg'),imagepath:'lullaby2.jpg', path: require('../../assets/sounds/fisfis.mp3') },
-  { id: '3', name: 'Ninni 3', image: require('../../assets/images/lullaby3.jpg'),imagepath:'lullaby3.jpg', path: require('../../assets/sounds/lullaby.mp3') },
-  { id: '4', name: 'Ninni 4', image: require('../../assets/images/lullaby4.jpg'),imagepath:'lullaby4.jpg', path: require('../../assets/sounds/fisfis.mp3') },
-  { id: '5', name: 'Ninni 5', image: require('../../assets/images/lullaby5.jpg'),imagepath:'lullaby5.jpg', path: require('../../assets/sounds/lullaby.mp3') },
-  { id: '6', name: 'Ninni 6', image: require('../../assets/images/lullaby6.jpg'),imagepath:'lullaby6.jpg', path: require('../../assets/sounds/fisfis.mp3') },
+  { id: '1', name: 'Dandini Dandini', image: require('../../assets/images/lullaby1.jpg'),imagepath:'lullaby1.jpg', path: require('../../assets/sounds/lullaby.mp3'),pathName:"lullaby" },
+  { id: '2', name: 'Fis Fis', image: require('../../assets/images/lullaby2.jpg'),imagepath:'lullaby2.jpg', path: require('../../assets/sounds/fisfis.mp3'),pathName:"fisfis" },
+  { id: '3', name: 'Brahms', image: require('../../assets/images/lullaby3.jpg'),imagepath:'lullaby3.jpg', path: require('../../assets/sounds/brahms.mp3'),pathName:"brahms" },
+  { id: '4', name: 'Twinkle', image: require('../../assets/images/lullaby4.jpg'),imagepath:'lullaby4.jpg', path: require('../../assets/sounds/twinkle.mp3'),pathName:"twinkle" },
+  { id: '5', name: 'Sleeping', image: require('../../assets/images/lullaby5.jpg'),imagepath:'lullaby5.jpg', path: require('../../assets/sounds/sleeping.mp3'),pathName:"sleeping" },
+  { id: '6', name: 'Cradle', image: require('../../assets/images/lullaby6.jpg'),imagepath:'lullaby6.jpg', path: require('../../assets/sounds/cradle.mp3'),pathName:"cradle" },
 ];
 
 export default function HomeScreen() {

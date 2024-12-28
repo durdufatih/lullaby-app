@@ -35,20 +35,7 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
-      <Tabs.Screen
-        name="colic"
-        options={{
-          title: 'Sounds',
-          tabBarIcon: ({ color }) => <Entypo name="sound" size={28} color={color}  />,
-        }}
-      />
-      <Tabs.Screen
-        name="settings"
-        options={{
-          title: 'Settings',
-          tabBarIcon: ({ color }) => <Ionicons name="settings" size={28} color={color} />,
-        }}
-      />
+  
     </Tabs>
   );
 }
